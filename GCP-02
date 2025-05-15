@@ -10,12 +10,21 @@ Examination tips:
 -> zone ends with alaphabet
 -> One Env in on-perm == one project (project-dev)(prooject-prod)
 
+
 Project Creation:
 
 -> Project name - for identifing (human readable) it can be changed n times after creation also
 -> project-id  - name-sufix(number) - by deafult google make it unique globally
 -> Location - No organization for free trail
 
+Project deletion:
+
+-> goto project setting -> click on "shutdown" (A soft deleteionof project for 30 days within this time u can restart u project)
+-> If you goto Manged resources u can fine the history of project and project need to be deleted in 30days
 
 Access GCP Resources:
 
+1. Google-CLoud-Storage: consider it as a Utility in House.
+
+2. Compute Enginbe - API - when u enabled you get the service account of the vm with project number prefix to its email.
+   so always keep your project id private
