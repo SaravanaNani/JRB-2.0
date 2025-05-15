@@ -1,0 +1,38 @@
+unique feature of gcp 
+ 
+ - the global presences of network
+ - no network choacking - i.e global network
+ - AI is one of the unique feature of gcp -  made it available to everyone
+   vision-api (AI)
+ - For MLOpS - Kubeflow service in gcp used
+ - gcp decmocratise AI and make available for everyone
+ - Open cloud Platform - means if u like the service you can use it or else u can quit
+   i.e - No vendor lock in concept
+ - hadoop - cloud dataproc., Apache H-base - cloud bigtable  you can use it till u need there is no vendor lock in
+ - open source for a rich ecosystem (Tensoorflow, Kubernetes)
+ - Multi vendir firendly technologies using the concept called - Anthos 
+
+Note - For cheat sheet of GCP go to the below link: https://github.com/priyankavergadia/google-cloud-4-words.git
+     - you get all deatiled info of 200 GCP resources here
+
+Free trail vs Free tier:
+Free trail for 90days with credits and access for all resources till you have credits.
+Free tier have premission for limmited resoucre and have limitted acecess to use it
+
+GCP console Overview:
+
+-> Cloud shell is Linux machine which is provided by google to work with CLI
+-> In Dashboard u will find wizards (project info, Resources, Trace etc.,)
+-> Googe CLoud Platform status wizard (green - indicates fine and evrything is running smooth . orange/red - restricted/outage of a resource)
+   links for console -> (status.concole.cloud.google.com)
+-> News wizards helps to upgarde the skills and knowlegede on gcp resources 
+
+GCP Termoinology:
+
+Zones - Independent failure domain within a region (represent with Alphabet) (data centers in region(mumbai))
+
+Region - Geographically independent locations (with in a country) (represent with number)
+
+Multi-regions - Collection of region in a specific continent
+
+Global - Any location
