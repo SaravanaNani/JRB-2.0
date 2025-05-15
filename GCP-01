@@ -12,7 +12,8 @@ unique feature of gcp
  - open source for a rich ecosystem (Tensoorflow, Kubernetes)
  - Multi vendir firendly technologies using the concept called - Anthos 
 
-Note - For cheat sheet of GCP go to the below link: https://github.com/priyankavergadia/google-cloud-4-words.git
+Note - For cheat sheet of GCP go to the below link: 
+     - https://github.com/priyankavergadia/google-cloud-4-words.git
      - you get all deatiled info of 200 GCP resources here
 
 Free trail vs Free tier:
@@ -24,7 +25,7 @@ GCP console Overview:
 -> Cloud shell is Linux machine which is provided by google to work with CLI
 -> In Dashboard u will find wizards (project info, Resources, Trace etc.,)
 -> Googe CLoud Platform status wizard (green - indicates fine and evrything is running smooth . orange/red - restricted/outage of a resource)
-   links for console -> (status.concole.cloud.google.com)
+   links for console -> (https://status.cloud.google.com)
 -> News wizards helps to upgarde the skills and knowlegede on gcp resources 
 
 GCP Termoinology:
