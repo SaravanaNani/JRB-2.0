@@ -3,6 +3,7 @@ Real time implementation tips:
 -> always browse "https://console.cloud.google.com" instead of searching GCP console
 -> "https://status.cloud.google.com" - for resource status in gcp project
 -> if you get access to a custom gcp project go and check the gcp projet in All tabs instead of recent tab of project
+-> when presenting a demo to a customer make sure you change the PROJECT NAME to CUSTOMER-A to have a personal experience
 
 Examination tips:
 -> region ends with numeric
@@ -11,7 +12,7 @@ Examination tips:
 
 Project Creation:
 
--> Project name - for identifing (human readable)
+-> Project name - for identifing (human readable) it can be changed n times after creation also
 -> project-id  - name-sufix(number) - by deafult google make it unique globally
 -> Location - No organization for free trail
 
