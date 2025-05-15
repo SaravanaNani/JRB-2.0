@@ -1,0 +1,7 @@
+Real time implementation tips:
+-> always browse "https://console.cloud.google.com" instead of searching GCP console
+-> "https://status.cloud.google.com" - for resource status in gcp project
+-> if you get access to a custom gcp project go and check the gcp projet in All tabs instead of recent tab of project
+
+Access GCP Resources:
+
