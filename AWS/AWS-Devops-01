@@ -42,6 +42,17 @@ We have 3  models: 1. Waterfall Model - 1970 -> code everything, test and deploy
 
 - It is quicker and faster and continous i.e, Devloper dev-code - tester test-code - operations team deploy the cdoe and checks immediately
 
+*** Note - DEVOPS IS A PROCESS not Technology ***
+
+=> Before Devops how Application is Deployed?
+
+- Devloper (Dev team)  codes -> Operations team -> Deploy -> Deployment failure - blame game in b/w dev and ops team for code issue or sever issue so comes wall of confusion
+- To break the wall of confusion - devops comes in 
+
+=> After Bevops how application is deployed?
+
+- Dev team codes -> Devops team - ( build, test, and deploy the code simuntaneously) 
+- development + Operation = DevOps = Break the wall of confusion
 
 
 
