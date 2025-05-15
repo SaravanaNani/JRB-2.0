@@ -30,3 +30,4 @@ Access GCP Resources:
    -> when you enabled API you get the service account of the vm with project number prefix to its email.
       so always keep your project id private (not to expose)
    -> VM must be a part of a Data Center i.e, Zone
+   -> There isno need of creation of keys as like in AWS for VM login
