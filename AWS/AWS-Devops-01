@@ -4,28 +4,44 @@ What is Devops ?
 
 To start a project weneed SDLC for the project
 
-SDLC - Lifecycle - process
+=> SDLC - Lifecycle - process
 
-Planning - Define Goals, scope, resources and cost and risk etc.,
-Requirment Analysis - involves Gathering, analyzing and documenting functional and non functional requirments
-Desgin - Blue print for the appplication, user interface etc.,
-Implement - Devlopmet takes place as per requirment
-Test - test the devloped code
-Deploy - releases the software to the users after through testing
-Maintain - Ensures the softwaare continues to operate as required.
+Planning             - Define Goals, scope, resources and cost and risk etc.,
+Requirment Analysis  - involves Gathering, analyzing and documenting functional and non functional requirments
+Desgin               - Blue print for the appplication, user interface etc.,
+Implement            - Devlopmet takes place as per requirment
+Test                 - test the devloped code
+Deploy               - releases the software to the users after through testing
+Maintain             - Ensures the softwaare continues to operate as required.
+
 ==============================================================================
 How to implement SDLC we process ?
 
-We have 3  models: 1. Waterfall Model - 1970
-                   2. Agile Model - 2001
-                   3. DevOps
+We have 3  models: 1. Waterfall Model - 1970 -> code everything, test and deploy
+                   2. Agile Model - 2001 -> code, test and deploy every 2 weeks
+                   3. DevOps - 2009 -> code, test and deploy continously
 
 1. -> Waterfall Model: Linear sequential approach to managing software project. 
-                    Each Phase depends on deliverables from the previous one. 
+                       Each Phase depends on deliverables from the previous one. 
 
 - Dev took-6 months to ddevelop code (meanwhile test and operation team are in chill mode)
 - 6 months later dev give the code to Tester and he finds the bug 
 - Now again the code got back word for development (devleoper)
 - so its time taking process and the quality is low so we moved to Agile
+
+2. -> Agile Model: Highly Dynamic and iterative approach. 
+                   where you do not need the complete set of reuirments to start with
+                   You can Develop some features and check customer response before takin the next step
+
+- Coustomer requirment is divided into sprints ( 4-8 weeks is a sprint)
+- after 2-4 sprint coustmer is asked to verify the release (requirment)
+- Collection of Sprints is known as Release
+
+3. -> Devops Model: Devops is a Agile methodology collaborating Development and operations.
+                    it enables end to end lifecycle delivery of featurrs, fixes, updates at frequent intervals
+
+- It is quicker and faster and continous i.e, Devloper dev-code - tester test-code - operations team deploy the cdoe and checks immediately
+
+
 
 
