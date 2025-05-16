@@ -42,8 +42,8 @@ What is Production Env?
                                 3-Tier Architecture:
 
 - Here Each client - application - Database layer are kept in 3 different machine
-- It is the recommended architecture for Production Environment.
 - Any coustomer directly access the backend server then it is known as Production Env 
+- Since
 
 -> Application Server - The server which has application hosted is callec application server
 -> Database server - The server which has database installed / the server where data is stored is called Database Server.
@@ -51,3 +51,16 @@ What is Production Env?
 - Every Devices communicate with each other in the N/W with IP and HostName
 - IP = Internet Protocol = IP is unique identifier for a device in the N/W
 - Hostname = Name of the server
+
+                                n-tier Architecture
+
+- Since the Application is devloped and the code must be secure we need to expose the application server in PVT-N/W
+- To Allow the public to access the application we add-on another layer  web-server
+- It is the recommended architecture for Production Environment.
+
+- the n-tier containe following layers:
+
+
+-> Webserver - takes the request and redirect to Application Server
+-> Application Server - The server which has application hosted is callec application server
+-> Database server - The server which has database installed / the server where data is stored is called Database Server.
