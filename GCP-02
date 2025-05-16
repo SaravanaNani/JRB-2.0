@@ -22,7 +22,9 @@ Project deletion:
 -> goto project setting -> click on "shutdown" (A soft deleteionof project for 30 days within this time u can restart u project)
 -> If you goto Manged resources u can fine the history of project and project need to be deleted in 30days
 
+=======================
 Access GCP Resources:
+=======================
 
 1. Google-CLoud-Storage: consider it as a Utility in House.
 
@@ -32,4 +34,36 @@ Access GCP Resources:
    -> VM must be a part of a Data Center i.e, Zone
    -> There isno need of creation of keys as like in AWS for VM login
    -> Always stop tor delete the resource if no longer used
+
+=============================
+Accesss GCP Resource Via CLI:
+=============================
+
+** Cloud shell is a Browser based linux machine **
+
+- CLoud shell is not attached to a project, it is attached to your account (email.id)
+- 5Gb of presistent disk is given free for cloud shell and 4vpcu and 16 GB RAM is given to it
+- All Required software is Pre-installed in the cloud shell 
+- If you are not comfortable with CLI you can enable ""EDITOR"" for UI in cloud shell, 
+- i.e, if the user need to read a file in linux (CLI) terminal with vi, nano, they can use the command "edit" to view the content in UI
+  eg: edit readme.tx -> it opens cloud shell EDITOR which is like notepad - GUI mode to see the files to do CRUD operation. 
+
+NOTE: *** The files placed in the Homw directory will be avaiable after the restart also but the file in other directory will not be stored ***
+- so that is here only the 5GB presistent volume will be attached to another VM-Cloud shell when it is restarted or reconnected
+
+- Click on """ Open terminal""" - to get back to CLI
+
+gcloud auth list        - it show the shell is attached to your email id nit to specific project
+
+cat /etc/os-release     - to know the OS of the cloud shell
+lscpu                   - to know cpu details od the cloud shell
+free -m                 - to know the memory details of the cloud shell
+sudo !!                 - to run the last command if it failed due to permission
+sudo cp ~/readme.tx .   - here [~] represents the home directory path so u can specify with this from any another directory 
+cd ~                    - to go to home directory from any pwd
+
+
+
+
+
 
