@@ -40,4 +40,7 @@ What is Production Env?
 - So because of this capacity issues we prefer 3-tier Architecture
 
                                 3-Tier Architecture:
--  
+
+- Here Each client - application - Database layer are kept in 3 different machine
+- It is the recommended architecture for Production Environment.
+- Any coustomer directly access the backend server then it is known as Production Env 
