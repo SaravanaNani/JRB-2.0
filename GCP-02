@@ -96,3 +96,13 @@ NOTE = "Instances" in above command have ability to create multiple VM at a time
 *** CLI via Cloud SDK ***
 
 -> When the cloud shell and console have been a server down issus you can use SDK in your local laptop to access the resources
+
+once you installed the SDK in local
+
+-> gcloud init                                                                    - initialize the SDK for authentication of your GCP account and set your project and zone etc
+-> gcloud config list                                                             - to list the acount,project etc.,  configuration avaiable in SDK
+-> gcloud projects list                                                           - to list the projects
+-> gcloud config set project PROJECT_ID                                           - to set or change the project
+-> gcloud compute instances create vm1 --project PROJECT_ID --zone us-central-1a  - to create VM in specifec Project via SDK
+-> gcloud compute instances stop vm1 --project PROJECT_ID --zone us-central-1a    - to Stop VM in specifec Project via SDK
+-> gcloud  compute instances list --project PROJECT_ID                            - to list VM in specifec Project via SDK
