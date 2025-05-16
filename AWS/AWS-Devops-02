@@ -52,7 +52,7 @@ What is Production Env?
 - IP = Internet Protocol = IP is unique identifier for a device in the N/W
 - Hostname = Name of the server
 
-                                n-tier Architecture
+                                N-tier Architecture
 
 - Since the Application is devloped and the code must be secure we need to expose the application server in PVT-N/W
 - To Allow the public to access the application we add-on another layer  web-server
@@ -60,7 +60,9 @@ What is Production Env?
 
 - the n-tier containe following layers:
 
-
+-> client layer - request a resource
 -> Webserver - takes the request and redirect to Application Server
 -> Application Server - The server which has application hosted is callec application server
 -> Database server - The server which has database installed / the server where data is stored is called Database Server.
+
+Types of Evnironment - Dev - QA - Pre-Prod - Prod
