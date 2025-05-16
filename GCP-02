@@ -7,6 +7,7 @@ Real time implementation tips:
 -> Always place the files in Home directory path (5Gb presistent vol) in your Cloud shell.
 -> """ gcloud beta interactive """ use this  command in cloud shell it open an interactive mode where it auto suggests the code
 -> """PS1=$""" When you use this command on linux machine you can type a long command so that it won't go for next line
+-> make sure to Install Google cloudSDk in your office lap and the type "gcloud init" to initalize your account 
 
 Examination tips:
 -> region ends with numeric
@@ -42,7 +43,8 @@ Access GCP Resources:
 Accesss GCP Resource Via CLI:
 =============================
 
-** Cloud shell is a Browser based linux machine **
+
+** CLI via Cloud shell *** 
 
 - CLoud shell is not attached to a project, it is attached to your account (email.id)
 - 5Gb of presistent disk is given free for cloud shell and 4vpcu and 16 GB RAM is given to it
@@ -91,3 +93,6 @@ NOTE = "Instances" in above command have ability to create multiple VM at a time
 -> gcloud compute instances delete  vm2 vm3 vm4                       - so by using above cmd and this one u can delete the multiple vm without adding zone in cmd
 -> gcloud compute instances delete  vm2 vm3 vm4 -q                    - this command [-q] does quietly delete
 
+*** CLI via Cloud SDK ***
+
+-> When the cloud shell and console have been a server down issus you can use SDK in your local laptop to access the resources
