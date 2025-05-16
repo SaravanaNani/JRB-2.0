@@ -4,6 +4,7 @@ Real time implementation tips:
 -> "https://status.cloud.google.com" - for resource status in gcp project
 -> if you get access to a custom gcp project go and check the gcp projet in All tabs instead of recent tab of project
 -> when presenting a demo to a customer make sure you change the PROJECT NAME to CUSTOMER-A to have a personal experience
+-> Always place the files in Home directory path (5Gb presistent vol) in your Cloud shell.
 
 Examination tips:
 -> region ends with numeric
@@ -47,23 +48,29 @@ Accesss GCP Resource Via CLI:
 - If you are not comfortable with CLI you can enable ""EDITOR"" for UI in cloud shell, 
 - i.e, if the user need to read a file in linux (CLI) terminal with vi, nano, they can use the command "edit" to view the content in UI
   eg: edit readme.tx -> it opens cloud shell EDITOR which is like notepad - GUI mode to see the files to do CRUD operation. 
+- Click on """ Open terminal""" - to get back to CLI
+- google cloud SDK is pre installed in shell - which is necessary to perform ""gcloud"" commands to acces GCP resources
+
 
 NOTE: *** The files placed in the Homw directory will be avaiable after the restart also but the file in other directory will not be stored ***
-- so that is here only the 5GB presistent volume will be attached to another VM-Cloud shell when it is restarted or reconnected
+so that is here only the 5GB presistent volume will be attached to another VM-Cloud shell when it is restarted or reconnected
 
-- Click on """ Open terminal""" - to get back to CLI
+gcloud auth list          - it show the shell is attached to your email id nit to specific project
 
-gcloud auth list        - it show the shell is attached to your email id nit to specific project
+cat /etc/os-release       - to know the OS of the cloud shell
+lscpu                     - to know cpu details od the cloud shell
+free -m                   - to know the memory details of the cloud shell
+sudo !!                   - to run the last command if it failed due to permission
+sudo cp ~/readme.tx .     - here [~] represents the home directory path so u can specify with this from any another directory 
+cd ~                      - to go to home directory from any pwd
+echo $DEVSHELL_PROJECT_ID -  to get project id from env variables in cloud shell
 
-cat /etc/os-release     - to know the OS of the cloud shell
-lscpu                   - to know cpu details od the cloud shell
-free -m                 - to know the memory details of the cloud shell
-sudo !!                 - to run the last command if it failed due to permission
-sudo cp ~/readme.tx .   - here [~] represents the home directory path so u can specify with this from any another directory 
-cd ~                    - to go to home directory from any pwd
+1. GCS bucket resources access via CLI:
 
-
-
+-> gsutil mb gs://$BUCKET-NAME             - create the bucket
+-> gsutil ls                               - to list the buckets
+-> gsutil cp source.txt gs://BUCKET-NAME/  - to copy the file to bucket
+-> gsutil ls  gs://BUCKET-NAME/            - lists the item inside the bucket
 
 
 
