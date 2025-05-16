@@ -44,3 +44,10 @@ What is Production Env?
 - Here Each client - application - Database layer are kept in 3 different machine
 - It is the recommended architecture for Production Environment.
 - Any coustomer directly access the backend server then it is known as Production Env 
+
+-> Application Server - The server which has application hosted is callec application server
+-> Database server - The server which has database installed / the server where data is stored is called Database Server.
+
+- Every Devices communicate with each other in the N/W with IP and HostName
+- IP = Internet Protocol = IP is unique identifier for a device in the N/W
+- Hostname = Name of the server
