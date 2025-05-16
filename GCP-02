@@ -5,6 +5,8 @@ Real time implementation tips:
 -> if you get access to a custom gcp project go and check the gcp projet in All tabs instead of recent tab of project
 -> when presenting a demo to a customer make sure you change the PROJECT NAME to CUSTOMER-A to have a personal experience
 -> Always place the files in Home directory path (5Gb presistent vol) in your Cloud shell.
+-> """ gcloud beta interactive """ use this  command in cloud shell it open an interactive mode where it auto suggests the code
+-> """PS1=$""" When you use this command on linux machine you can type a long command so that it won't go for next line
 
 Examination tips:
 -> region ends with numeric
@@ -73,4 +75,19 @@ echo $DEVSHELL_PROJECT_ID -  to get project id from env variables in cloud shell
 -> gsutil ls  gs://BUCKET-NAME/            - lists the item inside the bucket
 
 
+2. Compute Engine resouce access via CLI
+
+
+-> gcloud compute instnaces create $INSTANCE-NAME                 - to create vm then it will ask for zone
+-> gcloud compute instances create  $VM_NAME --zone us-central-1a - to creta vm with specified zone
+-> gcloud compute instnaces list                                  - to list the VMs
+
+*** within 30sec the VM is created in GCP as compoared other cloud provider ***
+
+NOTE = "Instances" in above command have ability to create multiple VM at a time
+
+-> gcloud compute instances create  vm2 vm3 vm4 --zone us-central-1a  - to create multiple VMS
+-> gcloud config set compute/zone us-central-1a                       - to set zone of the compute instnaces by default
+-> gcloud compute instances delete  vm2 vm3 vm4                       - so by using above cmd and this one u can delete the multiple vm without adding zone in cmd
+-> gcloud compute instances delete  vm2 vm3 vm4 -q                    - this command [-q] does quietly delete
 
