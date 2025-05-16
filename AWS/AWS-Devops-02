@@ -1,0 +1,43 @@
+                  Client-Server Architecture concept
+=============================================================================
+
+what is a client? 
+
+- anything which request a Resource is a client
+  for eg: Bowser (client) - gooogle.com(resource)
+- clinet (Always asking)
+
+what is a server?
+
+- anything which respond to the resource for client
+- Server (Always Responding)
+
+- The client server must be in a same N/w for communication
+- The N/W componets is a called as device
+
+There are [3] Different Types of Client-Server Architechture: 1-Tier
+                                                              2-Tier 
+                                                              3-Tier
+
+What is Production Env?
+
+
+============================================================================
+
+                                 1-Tier Architecture: 
+
+- Client and Server in same Device ( devloper code runs in a local host and browse the app in same local host)
+- only one layer, Therefore Not accessable by public
+
+                                 2-Tier Architecture:
+
+- client and Server on different Device (2layers) 
+- we have multiple client layer (all browser like google.com)
+- In server layer at bottom we have [Hardware] and on top of the Hardware we have [OS] on Top on OS we have [Application].
+  and also lets assume we have Database on top on OS along with Application
+- All multiple clinet connects the server - now here our server have 4Gb ram and 2cpu and 50GB HDD
+- Now There Will be conflit of allocating of storage/RAM for the Application and Database - to Respond the client
+- So because of this capacity issues we prefer 3-tier Architecture
+
+                                3-Tier Architecture:
+-  
