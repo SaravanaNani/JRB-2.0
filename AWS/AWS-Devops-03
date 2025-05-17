@@ -7,7 +7,7 @@ Laptop[Bowser]-|                          Local DNS (/etc/host) -> Root Name ser
                 IP-address (34.10.2.255)  /                     <-                                           <-                                 <-         [Ip address sent to bowser]          <- [conatins the IP-address of Domain Name]
                   
                     |
-                GOOGLE-COMPANY
+                GOOGLE-COMPANY[Application]
 |-------------------------------------------------------------|
 |-------------------------------------------------------------|
 | Firewall ( Allow/Deny)                                      | 
@@ -43,7 +43,7 @@ Name server - Idengtifies Domain Names (google.com) in side the Top level domain
 SOA - after Name sever the request pass to SOA - start of authority which have our IP address
 
 - once IP address is found it sends back to Browser, host name and IP was known now the requst goes to particular company (google company)
-- Once you get into Company appliaction there is a firewall restiction of for allow or deny your request
+- Once you get into Company appliaction there is a firewall restriction for allow or deny your request
 
 http-80 -> not secure connection to the application
 https - 443 - secure to connection to tha application
