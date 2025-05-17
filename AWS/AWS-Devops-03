@@ -7,19 +7,26 @@ Laptop[Bowser]-|                          Local DNS (/etc/host) -> Root Name ser
                 IP-address (34.10.2.255)  /                     <-                                           <-                                 <-         [Ip address sent to bowser]          <- [conatins the IP-address of Domain Name]
                   
                     |
-                GOOGLE-COMPANY[Application]
-|-----------------------------------------------------------------------------------------------------|
+======================================================================================================= 
+|        GOOGLE-COMPANY                                                                               |   
+|======================================================================================================    
 |-----------------------------------------------------------------------------------------------------|
 | Firewall ( Allow/Deny) -> allowed via protocol -> find multiple web-server                          | 
-|                                                                                                     | 
-| web-server    app-server    db-server [1]                                                           |
-|                                                                                                     | 
-|                                                                                                     |
-| web-server    app-server    db-server [2]                                                           |   
-|                                                                                                     |
-|                                                                                                     |
-| web-server    app-server    db-server [3]                                                           |
-------------------------------------------------------------------------------------------------------|
+|=====================================================================================================|  
+|Load Balancer -> Round robbin method - equally distribute traffic to below web server                |                                                                                    
+|=====================================================================================================|      
+|      | [Round robbin method]                                                                        |          
+|-----------------------------------------------------------------------------------------------------|   \
+| web-server -> app-server -> db-server [1]                                                           |     \
+|-----------------------------------------------------------------------------------------------------|       \                                                                                               
+|      |                                                                                              |         \  
+| web-server -> app-server -> db-server [2]                                                           |   -----------> Laptop get Google web-brower-application-data
+|-----------------------------------------------------------------------------------------------------|        /                                                                                                
+|      |                                                                                              |      /
+| web-server -> app-server -> db-server [3]                                                           |     / 
+-------------------------------------------------------------------------------------------------------   /
+
+
 
 
 -> Bowser need both hostname (google.com) and IP to request resource, 
@@ -45,15 +52,16 @@ SOA - after Name sever the request pass to SOA - start of authority which have o
 - once IP address is found it sends back to Browser, host name and IP was known now the requst goes to particular company (google company)
 - Once you get into Company appliaction there is a firewall restriction for allow or deny your request
 - you get allowed through the firewall based on the protocol which is tarnsfered through N/W in the form of Data-Packets
-- Once you get allowed you will hit web server -> app-server -> db-server
+- Once you get allowed you will hit -> Load balancer then load is distributed among -> web servers -> app-server -> db-server -> then you get the application google page
 
 
-Firewall - Stops unauthorized access to the N/W
-Protocols -  to used to connect your application
+-> Firewall - Stops unauthorized access to the N/W
+-> Protocols -  to used to connect your application
 
 http-80 -> not secure connection to the application
 https - 443 - secure to connection to tha application
 SSH - 22 - connect to Linux machine
 RDP - 3389 - connect to windows machine
 
-
+-> Load balancer - which distributes the traffic across multiple server using round robbin method
+-> always the request hits load balancer before hitting web server 
