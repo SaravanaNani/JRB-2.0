@@ -45,7 +45,7 @@ RNS - will check the extension [.com/.in/.org]-Top level Domains
 RNS - Identifies/check the Top level domain and redirect to that top level Domain 
 
 Name server - since there are many top level domains (.org/.com/.in) the Name server will identify the request
-Name server - Idengtifies Domain Names (google.com) in side the Top level domain and send it SOA to fetch IP
+Name server - Identifies Domain Names (google.com) in side the Top level domain and then send it to SOA to fetch IP
 
 SOA - after Name sever the request pass to SOA - start of authority which have our IP address
 
