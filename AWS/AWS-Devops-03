@@ -65,3 +65,9 @@ RDP - 3389 - connect to windows machine
 
 -> Load balancer - which distributes the traffic across multiple server using round robbin method
 -> always the request hits load balancer before hitting web server 
+
+NOTE:
+========================================================================================================
+**** nslookup **** command to get any IP address of any website , its a DNS command
+for eg: nslookup facebook - it gives ip addrees and if you put again you get Name: fb-loadbalancer url
+========================================================================================================
