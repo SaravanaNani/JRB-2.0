@@ -1,0 +1,52 @@
+                    What is Happening in the Backend?
+================================================================================
+
+
+                HostName (Google.com)     \
+Laptop[Bowser]-|                          Local DNS (/etc/host) -> Root Name server [RNS][check (.com/.in/)] -> Top level Domain(.com/.in/.org) -> Name-server(agents identify the domain name) -> SOA Start of Authority 
+                IP-address (34.10.2.255)  /                     <-                                           <-                                 <-         [Ip address sent to bowser]          <- [conatins the IP-address of Domain Name]
+                  
+                    |
+                GOOGLE-COMPANY
+|-------------------------------------------------------------|
+|-------------------------------------------------------------|
+| Firewall ( Allow/Deny)                                      | 
+|                                                             | 
+|                                                             |
+|                                                             | 
+|                                                             |
+|                                                             |   
+|                                                             |
+|                                                             |
+|                                                             |
+--------------------------------------------------------------|
+
+
+-> Bowser need both hostname (google.com) and IP to request resource, 
+-> so hostname alone we know here but to know IP browser use DNS
+
+DNS - Domain Name Server - Keep Tracks of all Hostnames and IP address 
+DNS - Convert Hostname to IP and IP to Hostname
+There are Different Types of DNS: 1. Local DNS
+                                  2. RNS - rootname server
+
+Bowser initially Serach in Local-DNS in your laptop for DNS 
+If the local DNS doesn't found IP it goes to next level RNS
+NOTE - every phone and lap has its own dns [windows-system32/c-drvie/etc/host]
+
+RNS - will check the extension [.com/.in/.org]-Top level Domains
+RNS - Identifies/check the Top level domain and redirect to that top level Domain 
+
+Name server - since there are many top level domains (.org/.com/.in) the Name server will identify the request
+Name server - Idengtifies Domain Names (google.com) in side the Top level domain and send it SOA to fetch IP
+
+SOA - after Name sever the request pass to SOA - start of authority which have our IP address
+
+- once IP address is found it sends back to Browser, host name and IP was known now the requst goes to particular company (google company)
+- Once you get into Company appliaction there is a firewall restiction of for allow or deny your request
+
+http-80 -> not secure connection to the application
+https - 443 - secure to connection to tha application
+SSH - 22 - connect to Linux machine
+RDP - 3389 - connect to windows machine
+
